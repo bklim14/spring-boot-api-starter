@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: briankentlim
+Build-Jdk: 10.0.1
+Implementation-Title: Novena Application API
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: io.bklim.novena
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/novena-api
+Created-By: Maven Integration for Eclipse
+
