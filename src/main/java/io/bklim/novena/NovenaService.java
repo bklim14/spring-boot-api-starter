@@ -8,5 +8,9 @@ public class NovenaService {
 	
 	@Autowired
 	private NovenaRepository novenaRepository;
+	
+	public void addNovena(Novena novena) {
+		novenaRepository.save(novena);
+	}
 
 }
