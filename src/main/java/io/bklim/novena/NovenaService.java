@@ -16,12 +16,25 @@ public class NovenaService {
 		novenaRepository.save(novena);
 	}
 	
+	public void updateNovena(String id, Novena novena) {
+		novena.setId(Integer.parseInt(id));
+		novenaRepository.save(novena);
+	}
+	
 	public List<Novena> getNovenaList() {
 		
 		List<Novena> novenaList = new ArrayList<>();
-		novenaRepository.findAll().forEach(novena -> novenaList.add(novena));
+		novenaRepository.findAll().forEach(novenaList::add);
 		
 		return novenaList;
+	}
+	
+	public Novena getNovena(String id) {
+		List<Novena> novenaList = new ArrayList<>();
+		novenaRepository.findById(id).stream().forEach(novenaList::add);
+		
+		return novenaList.get(0);
+		
 	}
 
 }
