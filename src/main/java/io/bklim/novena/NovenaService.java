@@ -34,7 +34,10 @@ public class NovenaService {
 		novenaRepository.findById(id).stream().forEach(novenaList::add);
 		
 		return novenaList.get(0);
-		
+	}
+	
+	public void deleteNovena(String id) {
+		novenaRepository.deleteById(id);
 	}
 
 }
