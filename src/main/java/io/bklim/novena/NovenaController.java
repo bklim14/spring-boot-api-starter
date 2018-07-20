@@ -16,5 +16,9 @@ public class NovenaController {
 	public void addNovena(@RequestBody Novena novena) {
 		novenaService.addNovena(novena);
 	}
+	
+	public void updateNovena(String id, Novena novena) {
+		novenaService.updateNovena(id, novena);
+	}
 
 }
