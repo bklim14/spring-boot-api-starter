@@ -1,5 +1,7 @@
 package io.bklim.novena;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,6 +21,10 @@ public class NovenaController {
 	
 	public void updateNovena(String id, Novena novena) {
 		novenaService.updateNovena(id, novena);
+	}
+	
+	public List<Novena> getNovenalist() {
+		return novenaService.getNovenaList();
 	}
 
 }
